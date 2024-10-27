@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script: typeof</title>
+</head>
+<body>
+    <h1>Typeof</h1>
+    <p id="t1"></p>
+    <p id="t2"></p>
+    <p id="t3"></p>
+    <p id="t4"></p>
+    <p id="t5"></p>
+    <p id="t6"></p>
+    <p id="t7"></p>
+    <p id="t8"></p>
+    <p id="t9"></p>
+
+    <script>
+        typeof undefined; // "undefined"
+        typeof 0; // "number"
+        typeof 10n; // "bigint"
+        typeof true; // "boolean"
+        typeof "foo"; // "string"
+        typeof Symbol("id"); // "symbol"
+        typeof Math; // "object"  (1)
+        typeof null; // "object"  (2)
+        typeof alert; // "function"  (3)
+        document.getElementById("t1").innerText = "undefined:" + typeof undefined;
+        document.getElementById("t2").innerText = "0:"+ typeof 0;
+        document.getElementById("t3").innerText = "10n:"+ typeof 10n;
+        document.getElementById("t4").innerText = "true:"+ typeof true;
+        document.getElementById("t5").innerText = "foo:"+typeof "foo";
+        document.getElementById("t6").innerText = "Symbol(id):"+typeof Symbol("id");
+        document.getElementById("t7").innerText = "Math:"+ typeof Math;
+        document.getElementById("t8").innerText = "null:"+ typeof null;
+        document.getElementById("t9").innerText = "alert:"+ typeof alert;
+      
+    </script>
+</body>
+</html>

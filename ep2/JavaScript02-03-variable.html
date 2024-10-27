@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Code Comment</title>
+</head>
+<body>
+        <h1>Java Script : Variable</h1>
+
+        <p id="data1">User1:</p>
+        <p id="data2">User2:</p>
+        <p id="data3">User3:</p>
+        <script>
+            let message;
+            message='Hello';
+            console.log(message);
+         
+          
+            let user1 = 'John', age1 = 25, message1 = 'Hello';
+            console.log(user1);
+            console.log(age1);
+            console.log(message1);
+
+            let user2 = 'Dora';
+            let age2 = 28;
+            let message2 = 'Hi';
+          
+            console.log(user2);
+            console.log(age2);
+            console.log(message2);
+
+            let user3 = 'Victor',
+            age3 = 30,
+            message3 = 'wellcome';
+
+            console.log(user3);
+            console.log(age3);
+            console.log(message3);
+            
+            document.getElementById("data1").innerHTML = "User1" +user1 +", age:"+ age1 + ", message:"+ message1;
+            document.getElementById("data2").innerHTML = "User2" +user2 +", age:"+ age2 + ", message:"+ message2;
+            document.getElementById("data3").innerHTML = "User3" +user3 +", age:"+ age3 + ", message:"+ message3;
+        </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript : position of script</title>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML="Paragraph changed.";
+        }
+    </script>
+
+</head>
+<body>
+    <h1 id="topic">JavaScript</h1>
+    <p id="demo">Content</p>
+        <button onclick="changeText()">Click me</button>
+        <button onclick="demo1()">External Js</button>
+    <script>
+        function changeText() {
+            document.getElementById("topic").innerText = "Hello!";
+            document.getElementById("demo").innerText = "Content Demo";
+        }
+    </script>
+    
+    <script src="myScript1.js"></script>
+      
+</body>
+</html>

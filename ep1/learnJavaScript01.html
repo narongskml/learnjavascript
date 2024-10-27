@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Learn JavaScript</title></head>
+
+<body>
+    <h1 id="topic">JavaScript</h1>
+    <button onclick="changeText()">Click me</button>
+    <button onclick="resetText()">Reset</button>
+    <script> 
+        console.log("Hello Console");
+        function changeText() {
+            document.getElementById("topic").innerHTML = "Hello World.";   
+            console.log("Hello changeText");
+        }
+        function resetText() {
+            document.getElementById("topic").innerHTML = "JavaScript"; 
+            console.log("Hello resetText");  
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript : Data Type</title>
+</head>
+<body>
+    <h1>Data Type</h1>
+    <h2>Number</h2>
+    <p id="int1"></p>
+    <p id="number1"></p>
+    <p id="number2"></p>
+    <p id="number3"></p>
+    <p id="number4"></p>
+    <h2>String</h2>
+    <p id="string1"></p>
+    <p id="string2"></p>
+    <p id="string3"></p>
+
+    <h2>Boolean</h2>
+    <p id="bool1"></p>
+
+    <h2>Null/Undefind: on console</h2>
+
+    <h2>Object User: </h2>
+    <p id="obj"></p>
+    <script>
+        let i1=123;
+        document.getElementById("int1").innerText = i1;   
+        let n=123.456;
+        document.getElementById("number1").innerText = n;        
+
+        document.getElementById("number2").innerText = (1 / 0).toString();    
+        console.log( 1 / 0 );    // Infinity
+        document.getElementById("number3").innerText  = Infinity.toString();
+        console.log( Infinity ); // Infinity
+
+        console.log(  "not a number" / 2); // NaN, 
+        console.log(  NaN + 1 );           // NaN, 
+        console.log(  3 * NaN  );          // NaN, 
+        document.getElementById("number4").innerText  = ("not a number" / 2).toString();
+        //Big int   larger than (253-1)
+        console.log(9007199254740991 + 1); // 9007199254740992
+        console.log(9007199254740991 + 2); // 9007199254740992
+        const bigInt = 1234567890123456789012345678901234567890n;
+        console.log(bigInt);
+
+        let str = "Hello";
+        let str2 = 'Single quotes are ok too';
+        let phrase = `can embed another ${str}`;
+        document.getElementById("string1").innerText = str;
+        document.getElementById("string2").innerText = str2;
+        document.getElementById("string3").innerText = phrase;
+
+        let is5greter4 = (5>4); //boolean
+        document.getElementById("bool1").innerText = is5greter4;
+        let age; //null not defind
+        console.log('show age value:')
+        console.log(age);
+        
+        
+
+        let user = {     		// an object
+            name: "John",  		// by key "name" store value "John"
+            age: 30        		// by key "age" store value 30
+        };
+        console.log("user name:"+ user.name ); // John
+        console.log("user age:" + user.age ); 	// 30
+        document.getElementById("obj").innerText="name:"+user.name + ", age:"+ user.age;
+    </script>
+</body>
+</html>

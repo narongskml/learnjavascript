@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript: Variable Name</title>
+</head>
+<body>
+    <h1>Variable Name</h1>
+    <script>
+        //ตัวอย่าง การ ตั้งชื่อ ตัวแปร
+        let userName;     // Camel case
+        let test123;  
+
+        let $ = 1; // ตัวแปร ชื่อ  "$"
+        let _ = 2; // ตัวแปร ชื่อ   "_"
+
+        alert($ + _); // 3
+
+        //ตัวอย่าง ที่ผิด
+        let 1a; 	        // ไม่สามารถ ขึ้นต้นด้วย ตัวเลขได้
+        let my-name; // มี hyphens ‘-’ ซึ่งไม่อนุญาติ ให้ใช้เป็นชื่อตัวแปร
+        let 我 = '...';  // non-english
+
+    </script>
+</body>
+</html>
