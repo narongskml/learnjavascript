@@ -6,3 +6,4 @@
 
 #ep3 non-browser JavaScript
 
+#ep4 [array](ep4/DataType_3_array.pdf "array")
